@@ -36,17 +36,17 @@ Understand Trends: Visualize monthly stock movements to identify seasonal or ope
 
 This dashboard was developed entirely using Microsoft Excel, focusing on data automation, visualization, and decision support.
 
-1. Data Logic & Automation
+**1. Data Logic & Automation**
 
 Generated a synthetic inventory dataset to simulate real warehouse conditions.
 
 Applied Excel formulas to automatically classify stock status:
 
-=IF([@Quantity] < [@Reorder_Level], "Yes", "No")
+*=IF([@Quantity] < [@Reorder_Level], "Yes", "No")
 
-=IF([@Quantity]=0,"Out of Stock",IF([@Quantity]<[@Reorder_Level],"Low Stock","Available"))
+=IF([@Quantity]=0,"Out of Stock",IF([@Quantity]<[@Reorder_Level],"Low Stock","Available"))*
 
-2. Pivot Tables & Analytics
+**2. Pivot Tables & Analytics**
 
 Created pivot tables to summarize:
 
@@ -58,7 +58,7 @@ Monthly inventory trends
 
 Grouped restock dates to analyze month-wise stock behavior.
 
-3. Dashboard & Interactivity
+**3. Dashboard & Interactivity**
 
 Used Slicers for filtering by:
 
